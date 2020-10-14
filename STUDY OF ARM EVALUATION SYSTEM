@@ -1,11 +1,16 @@
 AIM:
+
 To study ARM evaluation system.
+
 DESCRIPTION:
+
 The top view NXP 2148 ARM evaluation system gives the required hardware
 platform to study and apply on-chip peripheral function of the LPC 2148 microcontroller. The
 hardware is complete to provide all the required interfacing facilities on board to make the
 task easy and motivating one.
+
 HARDWARE DESCRIPTION:
+
 The ARM evaluation board has following modules for studying the internal peripherals of the
 device.
 NXP LPC2148 operating at 60MHz .
@@ -21,7 +26,9 @@ Serial port facility.
 USB facility
 128 X 64 pixels LCD
 5v power supply.
+
 MICROCONTROLLER SECTION:
+
 The microcontroller ARM NXP 2148 operates with external crystal of 10MHz.this
 section consists of the controller device, reset circuit, oscillator circuit.LPC2148 ARM
 controller can be operated in four different modes namely trace, debug, program and
@@ -29,13 +36,16 @@ normal mode. On-board jumpers JP1, JP2 and JP3 are used to select the operating 
 controller.
 
 NORMAL OPERATION:
+
 Disable all the three jumpers JP1, JP2 and JP3 to select normal mode operation.
 Controller executes user application program present in the flash during this mode.
 IN SYSTEM PROGRAMMING OPERATION:
 Enable jumperJP3 and disable jumpers JP1 and JP2 to select in-system programming
 (ISP) mode. After selecting jumper, press reset button S1 in evaluation board once to activate
 ISP mode. LED D27 glows to indicate the ISP mode.
+
 TRACE MODE:
+
 Enable jumper JP2and disable jumpers JP1 and JP3 to select the trace mode. After
 selecting jumper, press reset button once to activate trace mode.in this mode program
 debugging can be performed through trace port line.
@@ -48,7 +58,9 @@ EIGHT NUMBERS OF POINT LEDs:
 Eight numbers of point LEDs are interfaced to the microcontroller through the common
 data bus linesDB0 toDB7. Since common data bus lines DB0 –DB7 are used for the interface, a
 eight-bit latch74HC273 is used to drive the LEDs.
+
 EIGHT NUMBERS OF TOGGLE SWITCHES:
+
 The toggle switches are interfaced to the microcontroller through the common data bus
 line DB0 toDB7. Since common data bus lines DB0 –DB7 are used for the interface, a eight-bit
 buffer 74HC244 is used to interface the switches with data bus.
@@ -57,16 +69,21 @@ The display module consists of four number of common anode green colour displays
 The displays are connected to the IIC bus lines of the controller through a four digit LED driver
 with IIC interface. IC SAA1064 is a four digit LED driver with IIC interface. The IIC channel0
 of the controller is used here.
+
 TWO LINES BY 16 CHARACTERS LCD MODULE:
+
 A 2 line X 16 characters LCD module is provide on the evaluation board. The data
 lines are connected to the data bus DB0-DB7.
 
 4 X 4 KEYBOARD MATRIX:
+
 16 push button switches are provided to get a 4X 4 keyboard n matrix format. The
 Keyboard has 4 row and 4 colums.The rows are connected to port lines P0.15, P0.16, P0.17 and
 P0.18.The column lines are connected to P0.11, P0.12, P0.13 and P0.14. All the four column
 lines are pulled up to Vcc using 10K resistors.
+
 BUZZER:
+
 A buzzer is available on board and it driven by a NPN transistor. The base of the
 transistor is connected to the port line P0.25. This port line is also the output of the 10 bit DAC,
 the on chip peripheral of the controller. Hence the buzzer can be used to test the peripheral,
@@ -76,35 +93,48 @@ The IIC devices IIC RAM and IIC EEPROM are provided on board to study the IIC
 interface. Both the devices are connected to same two wire bus, where the seven segment LED
 driver (SAA1064) is connected. IIC devices are connected to the IIC peripheral of the controller
 board.
+
 ANALOG VOLTAGE SOURCE TO EXPERIMENT WITH ADC:
+
 A variable analog voltage source is made available on the board to experiment with
 ADC part of the microcontroller. The voltage source is connecting to the P0.29, which is the
 channel 2 of the ADC. A potentiometer is connected to the voltage to adjust the input voltage
 to ADC.
+
 TEMPERATURE SENSOR:
+
 The LM35 is precision integrated circuit temperature sensor, whose output voltage is
 linearly proportional to the Celsius temperature. Hence LM35 has advantage over other linear
 temperature sensors calibrated in degree kelvin, as the user is not required to subtract a large
 constant voltage from its output to obtain convenient centigrade reading.
+
 STEPPER MOTOR:
+
 A unipolar stepper motor is connected on-board for experimental purpose. For each
 winding, 2 Darlington drivers of IC ULN2803 are used as power driver. Each Darlington
 driver IC is capable of sinking 500mA current. Hence two Darlington drivers are connected
 in parallel to increase the current capacity to 1A
+
 5V RELAY:
+
 Two number of 5v relays are used in the board for experimental purpose. The relays are
 driven by the NPN transistors BC547. The port lines used for the driving the relays are P0.30
 and P0.10
 
 SERIAL PORT:
+
 The controller has two on chip serial port. The serial port 0 of the controller is
 used for programming the flash of the controller. The serial port 1 is terminated
 separately for user.
+
 USB:
+
 USB port lines of the microcontroller is terminated in a separate connected marked as
 USB1. For programming purpose another USB connector (USB 2) is provided. This can be
 connected to the USB port of the PC for programming purpose.
+
 GRAPICS LCD:
+
 A graphics LCD with 128X64 pixels is interfaced on the evaluation board. The data lines
 are connect to the data bus DB0-DB7. The control lines RS is connect to the port line P1.25. The
 R/W line is connecting to the port line P1.24. The CS line of the LCD is controlled by the
