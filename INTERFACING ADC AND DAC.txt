@@ -1,0 +1,49 @@
+AIM:
+
+To write an embedded C program for interfacing ADC and DAC and verify the output
+in the ARM kit.
+HARDWARE AND SOFTWARE REQUIRED:
+
+PC
+EMBEST IDE
+ARM Evaluation kit
+
+ALGORITHM:
+ADC:
+
+Step 1: Start the program
+Step 2: Initialize the LCD.
+Step 3: Intialise the ADC.Set the port line P0.29 to have the special function ADC input,
+using the PINSEL1 register
+Step 4: call the routine message_display1 to display message”ADC demo” on line 1 of the
+LCD. Call the routine message_display2 to display message”channel2;” on line 2 of
+the LCD.
+Step 5: a) set the control register of the ADC with the following
+specifications;
+Channel number=2;
+ADC clock=3 MHz.
+Select burst mode,
+Conversion clocks required =11clocks
+b) start the ADC conversion
+Step 6: Wait for EOC Once the EOC signal is obtained read the ADC valve.
+Step 7: Display the ADC value on the LCD.
+Repeat from step 4.
+Step8: Stop the program
+
+DAC:
+
+Step 1: Start the program
+Step 2: Initialize the DAC.Set the port line P0.25 to have the special function DAC,
+using the PINSEL1 register
+Step 3: Set the value 0 to DAC
+Call a delay
+Step 4: Set the value 0xFFC0 to
+DAC Call a delay.
+Step 5: Repeat step 2
+Step 6: Stop the program
+
+RESULT:
+
+Thus the Embedded C program for interfacing ADC and DAC was written and executed.
+The output was verified in the ARM kit.
+
