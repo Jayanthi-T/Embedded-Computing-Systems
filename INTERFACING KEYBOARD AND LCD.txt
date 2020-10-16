@@ -3,7 +3,7 @@ AIM:
 To write an embedded C program for interfacing keyboard and LCD and to verify
 the output in the ARM kit.
 
-HARDWARE AND SOFTWARE REQUIRED:
+HARDWARE AND SOFTWARE REQUIRED:  
 
 PC
 EMBEST IDE
