@@ -1,0 +1,54 @@
+AIM:
+
+To write an embedded C program for interfacing keyboard and LCD and to verify
+the output in the ARM kit.
+
+HARDWARE AND SOFTWARE REQUIRED:
+
+PC
+EMBEST IDE
+ARM Evaluation kit
+
+ALGORITHM:
+
+KEYBOARD:
+
+Step1:Start the program
+Step2:a) Initialize the
+IO lines
+b) Initialize LCD
+Step 3: Display the messages on both lines
+of LCD
+Step 4: Initialize keyboard lines
+a) Set P0.11 to P0.14 as input lines
+b) Set P0.15 to P0.18 as output lines
+Step 5: Initialize timer 0 to generate interrupt for every millisecond
+Step 6: Check the keyboard flag for 1 level. Read the key from the keyboard
+code. Clear the Keyboard flag variable.
+Step 7: Display the pressed key valve on the 2 line of the LCD using display
+byte routine. Repeat from step 5
+Step 8: Stop the program.
+
+LCD:
+
+Step 1: Start the program
+Step 2: Initialize the IO port lines
+Step 3: a) IntializeP0.19 (A0), P0.20 (A1), P0.22 (A2) as output port.
+b) Initialize data lines P.16 (DB0) to P1.23 (DB7) as output lines
+c) Initialize the control lines of LCD, P1.24(R/W) and P 1.25(RS) as
+output lines.
+Step 4: Initialize LCD
+Step 5:a)send command 0x80 to display string on line 1 of LCD.
+b) Send character one by one until all 16 characters are
+displayed.
+Step 6:a)send command 0xC0 to display string on line 2 of
+LCD.
+b) Send character one by one until all 16 characters are
+displayed.
+c) halt
+Step 7:Stop the program.
+
+RESULT:
+
+Thus the Embedded C program for for interfacing keyboard and LCD was written and
+executed. The output was verified in the ARM kit.
