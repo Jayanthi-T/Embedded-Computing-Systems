@@ -1,0 +1,52 @@
+
+AIM:
+
+To write an embedded C program for interfacing EEPROM and interrupt and to
+verify the output in the ARM kit.
+
+HARDWARE AND SOFTWARE REQUIRED:
+
+PC
+EMBEST IDE
+ARM Evaluation kit
+
+ALGORITHM:
+
+EEPROM:
+
+Step 1: Start the program
+Step 2: Initialize the LCD
+Step 3: Initialize IIC interface
+Step 4:a)Set the address location of EEPROM as 0x00
+b) Set the data as 0x12
+c) Call routine to write byte to EEPROM.
+d) Call the delay
+Step 5:a)Set the address as 0x00 for reading from
+EEPROM
+b) Call routine to read from EEPROM
+Step6:a)Displaythe
+address
+b) Halt
+Step 7: Stop the program
+
+INTERRUPT:
+
+Step 1: Start the program
+Step 2: a) Initialize the IO lines
+b) Initialize an eight bit counter to 0.
+Step 3: a) Allocate vector interrupt controller slot 0 for EINT0 by programming
+VICVectCntIO Register with 0x2e.
+b) Allocate vector interrupt controller slot 1 for EINT2 by programming
+VICVectCntI1 Register with 0x30.
+c) VICVectAddr0 register is initialized with address of the interrupt service
+routine for EINT0 .
+d) VICVectAddr1 register is initialized with address of the interrupt service
+routine for EINT2 .
+e) Slot 1 and slot 0 are enabled by writing VICIntEnable register with valve
+0x00014000.
+Step 4: Stop the program
+
+RESULT:
+Thus the Embedded C program for interfacing EEPROM and interrupt was written and
+executed. The output was verified in the ARM kit.
+
