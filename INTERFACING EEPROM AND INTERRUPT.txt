@@ -5,7 +5,7 @@ To write an embedded C program for interfacing EEPROM and interrupt and to
 verify the output in the ARM kit.
 
 HARDWARE AND SOFTWARE REQUIRED:
-
+  
 PC
 EMBEST IDE
 ARM Evaluation kit
