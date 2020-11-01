@@ -1,4 +1,3 @@
-
 AIM:
 
 To write an embedded C program for interfacing EEPROM and interrupt and to
