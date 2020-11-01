@@ -10,7 +10,6 @@ EMBEST IDE
 ARM Evaluation kit
 
 ALGORITHM:
-
 EEPROM:
 
 Step 1: Start the program
