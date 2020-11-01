@@ -7,7 +7,7 @@ HARDWARE AND SOFTWARE REQUIRED:
   
 PC
 EMBEST IDE
-ARM Evaluation kit
+ARM Evaluation kit  
 
 ALGORITHM:
 EEPROM:
