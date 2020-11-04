@@ -1,0 +1,23 @@
+AIM:
+To write an embedded C program for interfacing seven segment LED and verify the output
+in the ARM kit.
+
+HARDWARE AND SOFTWARE REQUIRED :
+PC
+EMBEST IDE
+ARM Evaluation kit
+
+ALGORITHM:
+SEVEN SEGMENT LED:
+Step 1: Start the program.
+Step 2: Initialize IIC interface
+Step 3: Send the instruction byte 0X00 to the IIC device.
+Step 4: Send the instruction byte0X01 to indicate that next byte is segment data fo digit 1.
+Step 5: Send the instruction byte 0X02 to indicate that next byte is segment data for digit 2.
+Step 6: Send the instruction byte 0X03 to indicate that next byte is segment data for digit 3.
+Step 7: Send the instruction byte 0X04 to indicate that next byte is segment data for digit 4.
+Step 8: Stop the program.
+
+RESULT:
+Thus the Embedded C program for interfacing seven segment LED was written and
+executed. The output was verified in the ARM kit.
