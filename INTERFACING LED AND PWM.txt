@@ -1,0 +1,38 @@
+AIM :
+To write an embedded C program for interfacing LED and PWM and to verify the output
+in the ARM kit.
+
+HARDWARE AND SOFTWARE REQUIRED :
+PC
+EMBEST IDE
+ARM Evaluation kit
+
+Algorithm:
+LED
+Step 1: Start the program.
+Step 2: Enable IO port. Initialize timer 0.
+Step 3: a) Initialize P0.19 (A0), P0.20 (A1), P0.22 (A2) as output port. These three lines
+are the Control lines to the decoder, use to the generate the chip enable signal for
+the LEDs.These line are called as address lines
+b) Initialize the data lines P1.16 (DB0) toP1.23 (DB7) as output lines.
+Step 4:a) Place the data for the LEDs in the data busDB0 to DB7.Set data to switch on one
+LED
+b) Clear all address lines as A0, A1 and A2. Then set all address lines back to 1 to
+enable The latch connected to the LEDs
+Step 5: Call a delay.
+Step 6:a) Rotate the data for a LEDs to switch on next
+LED.
+b) Repeat from step 2
+Step 7: Stop the program.
+
+PWM
+Step 1: Start the program.
+Step 2: a) Initialize LCD.
+b) Display a message on the LCD
+Step 3: Initialize PWM. Initialize a variable Var to 900.
+Set the direction to port lines P0.0 and P0.07 TO 0in the direction register
+Step4:Check for 0level in P0.01lines where a push button switch connected.
+Step5:Check for 0 level in P0.07lines where a push button switch connected.
+Step 6: Stop the program
+
+
