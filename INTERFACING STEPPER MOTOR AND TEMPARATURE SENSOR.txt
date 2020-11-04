@@ -1,0 +1,66 @@
+AIM:
+To write an embedded C program for interfacing stepper motor and temperature sensor
+and to verify the output in the ARM kit.
+
+HARDWARE AND SOFTWARE REQUIRED:
+PC
+EMBEST IDE
+ARM Evaluation kit
+
+ALGORITHM:
+Stepper motor:
+Step 1: Start the program
+Step 2: Initialize IO port lines.
+Step 3: a) Initialize P0.19 (A0), P0.20 (A1), and P0.22 (A2) as output port. These three lines are the
+Control lines to the decoder, used to generate the chip enable signal for the stepper motor. These
+lines are called as address lines.
+b)Initialize data lines P1.16 (DB0) to P1.23 (DB7) as output lines.
+c)Set the address lines asA0=1, A1=1 and clear the address line A2.
+Step 4: Initialize counter 1 to100.
+Step 5: a) Initialize a counter to 4.
+b) Place a data 0X6666 in the data bus.
+Step 6:a)toggle the address line A0 from 0 to 1,to enable the latch connected to the stepper motor
+Driver.
+b) Call a delay.
+Step7:a)shift left the data 0x6666 once
+b)Decrement the counter by 1.
+c) Repeat from step 5 until the counter becomes 0.
+Step 8:a) Decrement the counter1 by 1.
+b) This makes the motor rotate in clockwise direction for few seconds.
+c) Repeat from step 4 until the counter1 becomes 0.
+Step9: Initialize counter 1 to100.
+Step 10:a) Initialize a counter to 4.
+b) Place a data 0X6666 in the data bus.
+Step 11:a) toggle the address line A0 from 0 to 1,to enable the latch connected to the stepper
+Motor Driver.
+b) Call a delay.
+Step12:a)shift right the data 0x6666 once
+b)Decrement the counter by 1.
+c) Repeat from step 10 until the counter becomes 0.
+Step 13:a) Decrement the counter1 by 1.
+b) This makes the motor rotate in counter clockwise direction for few seconds.
+c) Repeat step 9 until it becomes 0.
+Step 14: Repeat from step 3
+Step 15: stop the program.
+
+TEMPERATURE SENSOR
+Step 1: Start the program.
+Step 2: initialize LCD
+Step 3: initialize ADC. Set the port lines AD0.1to has a special function using the PINSEL1
+Register.
+Step 4: Call the routine message_display 1 to display message “room temperature” on line one of
+the LCD.
+Step 5: a) Set the control register of the ADC with the following specifications
+Channel number=2;
+ADC clock=3 MHz
+Select burst mode.
+Conversion clocks required=11 b)
+Start the ADC conversion
+Step 6: Wait for EOC signal. Once the EOC signal is obtained, read the ADC value
+Step 7: Convert the read valve into BCD and then display the room temperature on the LCD
+module..Repeat from step4.
+Step 8: Stop the program.
+
+RESULT:
+Thus the Embedded C program for interfacing stepper motor and temperature sensor was
+written and executed. The output was verified in the ARM kit.
