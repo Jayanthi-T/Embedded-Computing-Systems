@@ -35,4 +35,8 @@ Step4:Check for 0level in P0.01lines where a push button switch connected.
 Step5:Check for 0 level in P0.07lines where a push button switch connected.
 Step 6: Stop the program
 
+RESULT :
+Thus the Embedded C program for interfacing LED and PWM was written and executed.
+The output was verified in the ARM kit.
+
 
