@@ -1,0 +1,36 @@
+AIM:
+To write an embedded C program for interfacing real time clock and serial port
+and to verify the output in the ARM kit.
+
+HARDWARE AND SOFTWARE REQUIRED :
+PC
+EMBEST IDE
+ARM Evaluation kit
+
+ALGORITHM:
+Real Time Clock:
+Step 1: Start the program.
+Step 2: Initialize LCD.
+Step 3: Initialize IIC interface.
+Step 4: Set the address location of RTC as 0X04.
+Step 5: Set the address location of RTC as 0X03.
+Step 6: Set the address location of RTC as 0X02.
+Step 7: Display the read data hours, minutes and seconds on the second line of the
+LCD. Repeat from step3.
+Step 8: Stop the program.
+
+SERIAL PORT:
+Step 1: Star t the program
+Step 2:a) Initialize Io lines.
+b) Initialize the serial port.
+Step 3:Send an initial message through serial port to PC.
+Step 4: a) Initialize LCD.
+b)Display messages on both lines of LCD.
+Step 5: Initialize keyboard lines.
+Step 6: Initialize timer 0 to generate interrupt for every millisecond. the keyboard is scanned
+for Key press in the timer 0interrupt routine
+Step 7: Check for a character from a serial port receiver buffer. Also check for a key
+press.
+Step 8: Repeat from step 6.
+Step 9: Stop the program
+
