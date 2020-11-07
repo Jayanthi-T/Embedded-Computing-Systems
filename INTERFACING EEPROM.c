@@ -8,7 +8,7 @@ EEPROM
 // LPC21xx definitions 
 extern void irq_iic(void); 
 // interrupt process  
-void Iic_Srv(void);  
+void Iic_Srv(void);
 void InitializeIIC(void);
 void I2CTransferByte(unsigned int I2CAddr,unsigned char MemAddr,unsigned char count,unsigned char *data);
 //Background call to start master send and receive byte transfers
