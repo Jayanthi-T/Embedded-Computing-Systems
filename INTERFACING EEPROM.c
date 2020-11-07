@@ -6,7 +6,7 @@ EEPROM
 /*************************************************/
 #include "LPC214x.h"
 // LPC21xx definitions  
-extern void irq_iic(void); 
+extern void irq_iic(void);  
 // interrupt process  
 void Iic_Srv(void);
 void InitializeIIC(void);
