@@ -5,7 +5,7 @@ EEPROM
 /* in a LCD Display
 /*************************************************/
 #include "LPC214x.h"
-// LPC21xx definitions  
+// LPC21xx definitions
 extern void irq_iic(void);  
 // interrupt process   
 void Iic_Srv(void);
