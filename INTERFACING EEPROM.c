@@ -48,7 +48,7 @@ lock = 0;
 //Initilise the lock flag
 VICVectCntl1 = 0x00000029;
 //select a priority slot for a given interrupt
-VICVectAddr1 = (unsigned long)irq_iic;
+VICVectAddr1 = (unsigned long)irq_iic; 
 //pass the address of the IRQ into the VIC slot
 VICIntEnable = 0x00000200;
 //enable interrupt
