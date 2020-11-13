@@ -22,7 +22,7 @@ LCDDelay1600();
 }
 //Read ADC data from given channel number
 int ReadADC(char ChannelNumber)
-{
+{ 
 int val,ch;
 ch = 1<<ChannelNumber;
 AD0CR = 0x00210400 | ch; // Setup A/D: 10-bit AIN @ 3MHz
