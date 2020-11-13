@@ -30,7 +30,7 @@ AD0CR |= 0x01000000; // Start A/D Conversion
 do
 {
 val = AD0DR2; // Read A/D Data Register
-}
+} 
 while ((val & 0x80000000) == 0); // Wait for the conversion to complete
 val = ((val >> 6) & 0x03FF); // Extract the A/D result
 AD0CR &= ~0x01000000; // Stop A/D Conversion
