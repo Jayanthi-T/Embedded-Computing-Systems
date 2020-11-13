@@ -17,7 +17,7 @@ while(1)
 a=ReadADC(Channel); // Read ADC channel 2
 DisplayLCD2Digit(1,10, (a >> 8)); // Display it on 2nd line of LCD
 DisplayLCD2Digit(1,12, (a & 0xff));
-LCDDelay1600();
+LCDDelay1600(); 
 }
 }
 //Read ADC data from given channel number
